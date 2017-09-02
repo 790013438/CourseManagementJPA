@@ -20,7 +20,7 @@ import static javax.persistence.DiscriminatorType.STRING;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 
-@ManagedBean (name="course")
+@ManagedBean(name="course")
 @RequestScoped
 @Entity
 @DiscriminatorColumn(discriminatorType = STRING)
