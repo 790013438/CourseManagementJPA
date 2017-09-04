@@ -48,7 +48,7 @@ public class Course implements Serializable {
     private List<Student> students;
 
     public boolean isValidCourse() {
-        return name != null && credits != 0;
+        return name != null && credits > 0;
     }
 
     public int getId() {
