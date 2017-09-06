@@ -20,7 +20,7 @@ import static javax.persistence.DiscriminatorType.STRING;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 
-@ManagedBean (name="course")
+@ManagedBean(name="course")
 @RequestScoped
 @Entity
 @DiscriminatorColumn(discriminatorType = STRING)
@@ -48,7 +48,7 @@ public class Course implements Serializable {
     private List<Student> students;
 
     public boolean isValidCourse() {
-        return name != null && credits != 0;
+        return name != null && credits > 0;
     }
 
     public int getId() {

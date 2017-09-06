@@ -7,12 +7,13 @@
     	<class>snippets.bean.Person</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/course_management_jpa"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/course_management_jpa?characterEncoding=UTF-8"/>
             <property name="javax.persistence.jdbc.user" value="user1"/>
             <property name="javax.persistence.schema-generation.database.action" value="create"/>
             <property name="javax.persistence.schema-generation.scripts.action" value="create"/>
             <property name="eclipselink.ddl-generation" value="create-tables"/>
             <property name="eclipselink.ddl-generation.output-mode" value="both"/>
+            <property name="javax.persistence.jdbc.password" value="37934bit"/>
         </properties>
     </persistence-unit>
 </persistence>
